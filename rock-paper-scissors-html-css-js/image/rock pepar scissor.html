@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/index01.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> rock pepar scissor</title>
+    <link rel="stylesheet" href="./rock pepar scissor_files/style.css">
+</head>
+<body>
+    <section class="container01 w-100 h-100">
+
+        <!-- heading section -->
+        <div class="w-100 d-flex j-c-c f-s-30 bg-gray b-r-15">
+            <h2> Rock Paper Scissors</h2>
+        </div>
+        
+        <!-- image & selector  section -->
+        <div class=" d-flex j-c-c ">
+            <div class="choice" id="rock">
+                <img class="content-img border" src="./rock pepar scissor_files/rock.png">
+            </div>
+
+            <div class="choice" id="pepar">
+                <img class="content-img border" src="./rock pepar scissor_files/pepar.png">
+            </div>
+
+            <div class="choice" id="scissor">
+                <img class="content-img border" src="./rock pepar scissor_files/scissors.png">
+            </div>
+        </div>
+
+        <!-- score-board section -->
+        <div class="score-board w-100 d-flex j-c-c m-t-20 ">
+            <div class=" b-s-3 d-flex w-50 j-c-c  b-r-15 padding-5"> 
+
+                <div class="score w-50  bg-black color b-r-15 d-flex  j-c-c  m-10 padding-10 ">
+                    <p id="user_score">0</p>
+                    <p>you Score </p>
+
+                </div>
+                <div class="score w-50  bg-black color b-r-15 d-flex j-c-c  m-10 padding-10">
+                    <p id="computer_score">0</p>
+                    <p>computer</p>
+
+                </div>
+            </div>    
+        </div>
+
+        <!-- resulte-board section -->
+        <div class="result-board w-100 d-flex j-c-c m-t-20 ">
+            <div class="w-50 padding-10 d-flex j-c-c  b-r-15 ">
+                <p id="result"></p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <script src="./rock pepar scissor_files/program01.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

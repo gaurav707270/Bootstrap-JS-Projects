@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> rock pepar scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <section class="container01 w-100 h-100 ">
+
+        <!-- heading section -->
+        <div class="w-100 d-flex j-c-c f-s-30 bg-gray b-r-15 col">
+            <h2 class="col d-flex j-c-c"> Rock Pepar Scissors</h2>
+        </div>
+        
+        <!-- image & selector  section -->
+        <div class=" d-flex j-c-c w-100 row ">
+            <div class="choice d-flex j-c-c " id="rock" >
+                <img class="content-img border col-sm-1 col-md-2 col-lg-3" src="image/rock.png">
+            </div>
+
+            <div class="choice d-flex j-c-c" id="pepar">
+                <img class="content-img border col-sm-1 col-md-2 col-lg-3" src="image/pepar.png">
+            </div>
+
+            <div class="choice d-flex j-c-c" id="scissor">
+                <img  class="content-img border col-sm-1 col-md-2 col-lg-3" src="image/scissors.png">
+            </div>
+        </div>
+
+        <!-- score-board section -->
+        <div class="score-board w-100 d-flex j-c-c m-t-20  row ">
+            <div class=" b-s-3 d-flex w-50 j-c-c  b-r-15 padding-5 row"> 
+
+                <div class="score w-50  bg-black color b-r-15 d-flex  j-c-c  m-10 padding-10 col-sm-1 col-md-2">
+                    <p id="user_score_para" class="m-10">0</p>
+                    <p class="m-10">you Score </p>
+
+                </div>
+                <div class="score w-50  bg-black color b-r-15 d-flex j-c-c  m-10 padding-10 col-sm-1 col-md-2">
+                    <p id="computer_score_para" class="m-10">0</p>
+                    <p class="m-10">computer score</p>
+
+                </div>
+            </div>    
+        </div>
+
+        
+        <!-- resulte-board section -->
+        <div class="result-board w-100 d-flex j-c-c m-t-20 row ">
+            <div class="w-50 padding-10 d-flex j-c-c  b-r-15  bg-gray  b-s-3">
+                <h2 id="result">Play Your Move</h2>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+let user_score = 0;
+let computer_score = 0;
+
+const choices = document.querySelectorAll(".choice");
+
+const computer_choices = ["rock", "paper", "scissors"];
+function getComputerChoice() {
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
+}
+
+choices.forEach((choice) =>{
+    console.log(choice);
+    choice.addEventListener("click",() =>{
+        const choiceid  = choice.getAttribute("id");
+        console.log("choice was clicked", choiceid);
+    });
+});
+
+
+
+
+// const computer_choices = ["rock", "paper", "scissors"];
+
+// function getComputerChoice() {
+//     const randomIndex = Math.floor(Math.random() * choices.length);
+//     return choices[randomIndex];
+// }
+
+// const computerChoice = getComputerChoice();
+
+// if (computerChoice === choiceid){
+//     console.log("the match is drow")
+// }
+// if else ( )
+
+
+
+
+
+
+
+
+
+
+
+
+// let a =document.querySelector("#rock");
+
+// let b= document.querySelector("#pepar");
+
+// let c = document.querySelector("#scissor")
+
+// console.log(a,b,c)
