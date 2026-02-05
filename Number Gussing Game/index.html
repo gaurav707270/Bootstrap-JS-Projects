@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Number Guessing Game</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+            <style>
+                button:active{
+                    scale: 0.8;
+                }
+            </style>
+        </head>
+    <body clASS="bg-black">
+        <div class="container-fluid  ">
+            <h1 class="d-flex justify-content-center text-white p-3"> Number Guessing Game </h1>
+
+            <div class="container d-flex justify-content-center ">
+                <div class="w-75 h-100 bg-white p-3 rounded">
+                    <p class="fw-bold d-flex justify-content-center ">Try And Guess Random Number Between 1 And 100..</p>
+                    <p class="d-flex justify-content-center">You Have 10 Attempts To Guess The Right Number</p>
+
+                    <h1 class="display-3 d-flex justify-content-center mt-5">Guess A Number </h1>
+                    <input id="guess_number" class="w-100  p-2 rounded" type="number">
+
+                    <div class="w-100 d-flex justify-content-center mt-3 ">
+                        <button  id="submite_btn" class="btn p-2  w-50 rounded btn btn-primary">Submite Guess</button>
+                
+                    </div>
+
+                    <p id="guesses" class="fw-bold w-100 d-flex justify-content-center mt-2 "> Previous Guesses</p>
+                    <p id="last_result" class="w-100 d-flex justify-content-center"> Guessses Remaining: <span id="count" >10</span></p>
+
+                    <!-- <p class="low_or_hi"></p> -->
+                    <p id="low_or_hi" class="low_or_hi fw-bold text-center mt-2"></p>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

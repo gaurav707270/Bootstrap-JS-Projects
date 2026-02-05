@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <h1 class="bg-black color-white padding-10 b-r-15 "><img  src="https://media.istockphoto.com/id/483424683/photo/euro-and-dollar-symbol-eur-usd-pair.jpg?s=612x612&w=0&k=20&c=sxpJ59whk1IQbv2O22UE0zYEmZ9zZA76-iJBsrsAa_I="  width="50" height="34">   Online Currency Converter</h1>
+
+        <div class="container w-100 h-100 d-flex j-c-c m-t-20">
+            <form class="w-75 ">
+                <div class="amount">
+                    <p class="f-s-20 color-white">Enter Amount</p>
+                    <input class="padding-10 b-r-15 w-100" value="1" type="text" />
+                </div>
+
+                <div class="dropdown d-flex w-100 j-c-c">
+                    <div class="from m-t-20  ">
+                        <p class="color-white"> From</p>
+            
+                        <div class="select-container  b-s-3 padding-10">
+                            <img src="https://flagsapi.com/US/flat/64.png" />
+                            <select class="padding-10" name="from"></select>
+                        </div>
+                    </div>
+
+                    <!-- exchange arrow -->
+                    <i class="ri-arrow-left-right-fill f-s-30 color-white m-20"></i>
+
+
+                    <div class="to m-t-20">
+                        <p class="color-white">To</p>
+
+                        <div class="select-container b-s-3 padding-10 ">
+                            <img src="https://flagsapi.com/IN/flat/64.png" />
+                            <select class="padding-10" name="to"></select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="m-t-20   ">
+                    <div class="msg w-100 m-t-20 color-white f-s-20 ">1USD = 80INR</div>
+                        <button class="w-50 padding-5 b-r-15 m-10 w-100">Get Exchange Rate</button>
+                </div>
+            </form>
+        </div>
+    <script src="code.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
