@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(255, 250, 243);
+}
+
+.light-orange {
+    background-color: rgb(254, 235, 157);
+}
+
+.cart {
+    width: 300px;
+    height: 400px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.cart_image {
+    width: 300px;
+    height: 300px;
+}
+
+.work_cart{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    margin: 3px;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.banner_color{
+    background-color: rgb(252,252,252);
+}
+
+.banner_color01{
+    background-color:rgb(255,255,255);
+}
+
+button:active{
+    scale: 0.8;
+}
+
+.cart_hover{
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.cart_hover:hover{
+    scale: 1.07;
+
+}
