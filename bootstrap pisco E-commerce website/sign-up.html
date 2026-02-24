@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up - Pisco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div
+            class="d-flex w-100 justify-content-between align-items-center p-3 m-0 flex-wrap row-cols-1 row-cols-sm-2 row-cols-md-3 h-25  ">
+
+            <div>
+                <img width="250px" class="shadow p-2 rounded object-fit-cover"
+                    src="https://html.pixelfit.agency/pesco/assets/images/logo/logo-main.png" alt="logo">
+            </div>
+
+
+
+            <div>
+                <div class="d-flex text-end d-none d-lg-block">
+
+                    <div class="d-inline-block">
+                        <i class="ri-phone-line fs-1 m-2"></i>
+                    </div>
+                    <div class="d-inline-block">
+                        <p class="m-0">Support 24/7</p>
+                        <p class="m-0">+91 : 9832353832</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex justify-content-center align-items-center h-75">
+
+            <div class="card shadow p-4" style="width: 450px;">
+
+                <h3 class="text-center mb-4">Create Account</h3>
+
+                <form id="signupForm">
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark w-100">Sign Up</button>
+
+                    <div class="text-center mt-3">
+                        <p>Already have an account? <a href="http://127.0.0.1:5500/login.html#">Login</a></p>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            const user = {
+                name: name,
+                email: email,
+                password: password
+            };
+
+            localStorage.setItem("user", JSON.stringify(user));
+
+            alert("Account Created Successfully!");
+            window.location.href = "login.html";
+        });
+    </script>
+
+</body>
+
+</html>
