@@ -24,7 +24,7 @@
 //   display_todos();
 // };
 
-// const display_todos = () => {
+// const displaytodos = () => {
 //   todos_collection.innerHTML = "";
 //   todo_list.map((todo, i) => {
 //     const div = document.createElement("div");
