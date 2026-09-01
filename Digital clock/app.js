@@ -1,6 +1,6 @@
 // const clock = document.querySelector("#clock");
 const time = document.querySelector("#time");
-
+// 
 setInterval(() =>{
     let date = new Date();
     // console.log(date.toLocaleDateString());
