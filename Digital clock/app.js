@@ -6,4 +6,4 @@ setInterval(() =>{
     console.log(date.toLocaleDateString());
     clock.innerText = date.toLocaleDateString();
     time.innerHTML = date.toLocaleTimeString();
-// },1000);
+},1000);
