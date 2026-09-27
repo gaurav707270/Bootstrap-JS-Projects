@@ -1,5 +1,5 @@
 // const clock = document.querySelector("#clock");
-// const time = document.querySelector("#time");
+const time = document.querySelector("#time");
 
 setInterval(() =>{
     let date = new Date();
